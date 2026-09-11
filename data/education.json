@@ -1,0 +1,160 @@
+[
+  {
+    "category": "Smartphone",
+    "icon": "📱",
+    "harmful_components": [
+      "Lead (Pb) — in solder and glass",
+      "Mercury — in display backlights",
+      "Cadmium — in rechargeable batteries",
+      "Brominated Flame Retardants (BFRs) — in circuit boards",
+      "Arsenic — in low-energy microchips",
+      "Beryllium — in connectors and springs",
+      "Antimony trioxide — as flame retardant"
+    ],
+    "health_effects": [
+      "Lead causes brain damage, learning disabilities & kidney failure",
+      "Mercury damages the nervous system and kidneys",
+      "Cadmium accumulates in bones and kidneys causing Itai-itai disease",
+      "BFRs are endocrine disruptors linked to thyroid dysfunction",
+      "Arsenic is a known carcinogen — causes lung & skin cancer"
+    ],
+    "environmental_stats": [
+      "1 smartphone contains ~62 types of metals",
+      "Informal burning releases dioxins — 10,000× more toxic than DDT",
+      "Leached lead poisons groundwater for 50+ years",
+      "~152 million smartphones discarded globally every year",
+      "Recycling 1 million phones recovers ~35 lbs of gold"
+    ]
+  },
+  {
+    "category": "Laptop",
+    "icon": "💻",
+    "harmful_components": [
+      "Lead — in solder, CRT displays",
+      "Mercury — in CCFL backlight lamps",
+      "Cadmium — in NiCd batteries",
+      "Chromium VI — in steel housing coatings",
+      "PVC (Polyvinyl Chloride) — in cables",
+      "Brominated Flame Retardants — in PCBs",
+      "Lithium — in batteries (fire hazard)"
+    ],
+    "health_effects": [
+      "Chromium VI causes respiratory tract cancer",
+      "PVC burning releases hydrochloric acid and dioxins",
+      "Mercury vapour causes tremors, memory loss, cognitive damage",
+      "Lithium fires produce toxic smoke if batteries are crushed",
+      "Long-term e-waste worker exposure linked to elevated cancer rates"
+    ],
+    "environmental_stats": [
+      "A single laptop has ~20g of precious metals",
+      "Landfilled laptops leach mercury into soil for decades",
+      "Producing a new laptop uses ~530 lbs of fossil fuel",
+      "Only 20% of e-waste globally is formally recycled",
+      "Recycling 1 ton of laptops recovers more gold than 17 tons of gold ore"
+    ]
+  },
+  {
+    "category": "CRT Monitor",
+    "icon": "🖥️",
+    "harmful_components": [
+      "Lead (up to 4 kg per CRT!) — in glass funnel & panel",
+      "Barium — in CRT electron gun",
+      "Cadmium — in phosphor coating",
+      "Mercury — in fluorescent components",
+      "Phosphorus — in screen coating",
+      "Zinc sulfide — in phosphor layer"
+    ],
+    "health_effects": [
+      "4 kg lead per CRT is a massive groundwater contamination risk",
+      "Barium dust causes breathing difficulties and muscle weakness",
+      "Phosphorus burning produces phosphine gas — acutely toxic",
+      "CRT smelting workers face 10× higher lead blood levels",
+      "Children near informal CRT recyclers show severe developmental delay"
+    ],
+    "environmental_stats": [
+      "A single CRT contains 4–8 lbs of lead",
+      "US alone has ~700 million CRTs in storage/landfills",
+      "CRT glass is not recyclable in standard glass streams",
+      "Lead leaching from CRTs contaminates soil for 100+ years",
+      "Designated CRT recyclers can recover ~90% of glass lead safely"
+    ]
+  },
+  {
+    "category": "Battery",
+    "icon": "🔋",
+    "harmful_components": [
+      "Lead-Acid: Lead & Sulfuric acid",
+      "NiCd: Cadmium — highly toxic",
+      "Lithium-Ion: Lithium, Cobalt, Manganese",
+      "NiMH: Nickel, Rare Earth Metals",
+      "Alkaline: Zinc & Manganese Dioxide",
+      "Mercury (older button cells)"
+    ],
+    "health_effects": [
+      "Lead poisoning causes irreversible brain damage in children",
+      "Cadmium is a proven carcinogen — causes lung & prostate cancer",
+      "Lithium fires are extremely difficult to extinguish",
+      "Cobalt mining linked to child labor & respiratory disease",
+      "Sulfuric acid burns cause severe tissue damage"
+    ],
+    "environmental_stats": [
+      "3 billion batteries sold in the US alone per year",
+      "Only ~5% of lithium-ion batteries are formally recycled",
+      "One D-cell battery can pollute 7,500 liters of water",
+      "Cobalt mining devastates ecosystems in DRC, Africa",
+      "Recovering battery metals uses 50× less energy than mining virgin ore"
+    ]
+  },
+  {
+    "category": "Appliance",
+    "icon": "🏠",
+    "harmful_components": [
+      "CFC & HCFC refrigerants — in fridges & ACs",
+      "Asbestos — in older appliance insulation",
+      "Lead — in wiring and solder",
+      "Mercury — in thermostats & switches",
+      "PCBs (Polychlorinated Biphenyls) — in capacitors",
+      "Chromium — in steel coatings"
+    ],
+    "health_effects": [
+      "CFCs deplete the ozone layer — increase UV cancer risk",
+      "Asbestos fibres cause mesothelioma (incurable lung cancer)",
+      "PCBs are persistent organic pollutants — accumulate in fatty tissue",
+      "Mercury switches release vapour during informal dismantling",
+      "Refrigerant leaks contribute to global warming 2000× more than CO₂"
+    ],
+    "environmental_stats": [
+      "Large appliances = 46% of global e-waste by weight",
+      "One AC unit can contain up to 2 kg of CFCs",
+      "Refrigerant gases persist in atmosphere for 50–100 years",
+      "Proper recycling of 1 fridge prevents 100 kg CO₂ equivalent",
+      "EU recovers ~80% of appliance materials — India <10%"
+    ]
+  },
+  {
+    "category": "Television",
+    "icon": "📺",
+    "harmful_components": [
+      "Lead — in solder and CRT glass",
+      "Mercury — in CCFL backlights (LCD TVs)",
+      "Cadmium — in older CRT phosphors",
+      "Arsenic — in glass panels",
+      "Antimony — as flame retardant",
+      "Hexavalent Chromium — in housing"
+    ],
+    "health_effects": [
+      "Mercury from LCD backlights contaminates food chains via water",
+      "Arsenic exposure causes skin lesions and internal cancers",
+      "Lead from CRT TVs is a persistent soil and water contaminant",
+      "BFR combustion byproducts are potent carcinogens",
+      "Informal TV dismantlers show high rates of occupational poisoning"
+    ],
+    "environmental_stats": [
+      "~50 million TVs discarded per year globally",
+      "Flat panel TVs contain 40+ chemical substances",
+      "Mercury from 1 million LCD TVs = 5 kg of toxic waste",
+      "Recycling 1 ton of circuit boards yields more gold than 17 tons of ore",
+      "LED TVs use 50% less energy but still require careful end-of-life handling"
+    ]
+  }
+]

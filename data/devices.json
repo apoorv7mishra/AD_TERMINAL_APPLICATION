@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "aliases": ["phone", "mobile", "cell phone", "iphone", "android"],
+    "weight_g": 180,
+    "metals_per_kg": {
+      "gold_mg": 340,
+      "silver_mg": 3500,
+      "copper_mg": 15000,
+      "palladium_mg": 150,
+      "platinum_mg": 10
+    },
+    "base_points": 80,
+    "category": "mobile"
+  },
+  {
+    "id": 2,
+    "name": "Laptop",
+    "aliases": ["notebook", "macbook", "ultrabook", "chromebook"],
+    "weight_g": 1800,
+    "metals_per_kg": {
+      "gold_mg": 220,
+      "silver_mg": 1500,
+      "copper_mg": 11000,
+      "palladium_mg": 90,
+      "platinum_mg": 5
+    },
+    "base_points": 200,
+    "category": "computing"
+  },
+  {
+    "id": 3,
+    "name": "Desktop Computer",
+    "aliases": ["desktop", "PC", "computer", "tower"],
+    "weight_g": 7000,
+    "metals_per_kg": {
+      "gold_mg": 190,
+      "silver_mg": 1200,
+      "copper_mg": 20000,
+      "palladium_mg": 80,
+      "platinum_mg": 4
+    },
+    "base_points": 350,
+    "category": "computing"
+  },
+  {
+    "id": 4,
+    "name": "Tablet",
+    "aliases": ["ipad", "tab", "surface", "kindle fire"],
+    "weight_g": 450,
+    "metals_per_kg": {
+      "gold_mg": 280,
+      "silver_mg": 2200,
+      "copper_mg": 13000,
+      "palladium_mg": 120,
+      "platinum_mg": 8
+    },
+    "base_points": 120,
+    "category": "mobile"
+  },
+  {
+    "id": 5,
+    "name": "CRT Monitor",
+    "aliases": ["CRT", "cathode ray tube", "old monitor", "tube monitor"],
+    "weight_g": 15000,
+    "metals_per_kg": {
+      "gold_mg": 10,
+      "silver_mg": 100,
+      "copper_mg": 5000,
+      "palladium_mg": 5,
+      "platinum_mg": 1
+    },
+    "base_points": 150,
+    "category": "display"
+  },
+  {
+    "id": 6,
+    "name": "LCD/LED Monitor",
+    "aliases": ["monitor", "display", "screen", "LCD", "LED monitor"],
+    "weight_g": 4000,
+    "metals_per_kg": {
+      "gold_mg": 50,
+      "silver_mg": 400,
+      "copper_mg": 7000,
+      "palladium_mg": 20,
+      "platinum_mg": 2
+    },
+    "base_points": 180,
+    "category": "display"
+  },
+  {
+    "id": 7,
+    "name": "Lithium-Ion Battery",
+    "aliases": ["battery", "li-ion", "lithium battery", "phone battery", "laptop battery"],
+    "weight_g": 200,
+    "metals_per_kg": {
+      "gold_mg": 0,
+      "silver_mg": 0,
+      "copper_mg": 8000,
+      "palladium_mg": 0,
+      "platinum_mg": 0
+    },
+    "base_points": 40,
+    "category": "battery"
+  },
+  {
+    "id": 8,
+    "name": "Smartwatch",
+    "aliases": ["smart watch", "apple watch", "fitness band", "wearable", "fitbit"],
+    "weight_g": 50,
+    "metals_per_kg": {
+      "gold_mg": 400,
+      "silver_mg": 4000,
+      "copper_mg": 14000,
+      "palladium_mg": 160,
+      "platinum_mg": 12
+    },
+    "base_points": 60,
+    "category": "mobile"
+  },
+  {
+    "id": 9,
+    "name": "Printer / Scanner",
+    "aliases": ["printer", "scanner", "inkjet", "laser printer", "all-in-one printer"],
+    "weight_g": 5000,
+    "metals_per_kg": {
+      "gold_mg": 30,
+      "silver_mg": 200,
+      "copper_mg": 6000,
+      "palladium_mg": 15,
+      "platinum_mg": 1
+    },
+    "base_points": 130,
+    "category": "computing"
+  },
+  {
+    "id": 10,
+    "name": "Television (Flat Panel)",
+    "aliases": ["TV", "television", "smart TV", "LED TV", "OLED TV", "flat screen TV"],
+    "weight_g": 12000,
+    "metals_per_kg": {
+      "gold_mg": 20,
+      "silver_mg": 300,
+      "copper_mg": 4500,
+      "palladium_mg": 12,
+      "platinum_mg": 2
+    },
+    "base_points": 250,
+    "category": "display"
+  },
+  {
+    "id": 11,
+    "name": "Router / Modem",
+    "aliases": ["router", "modem", "wifi router", "network switch", "hub"],
+    "weight_g": 250,
+    "metals_per_kg": {
+      "gold_mg": 120,
+      "silver_mg": 800,
+      "copper_mg": 9000,
+      "palladium_mg": 60,
+      "platinum_mg": 4
+    },
+    "base_points": 50,
+    "category": "networking"
+  },
+  {
+    "id": 12,
+    "name": "Hard Drive / SSD",
+    "aliases": ["hard drive", "HDD", "SSD", "solid state drive", "external hard drive"],
+    "weight_g": 160,
+    "metals_per_kg": {
+      "gold_mg": 300,
+      "silver_mg": 1000,
+      "copper_mg": 12000,
+      "palladium_mg": 100,
+      "platinum_mg": 6
+    },
+    "base_points": 70,
+    "category": "computing"
+  },
+  {
+    "id": 13,
+    "name": "Digital Camera",
+    "aliases": ["camera", "DSLR", "point and shoot", "compact camera", "mirrorless camera"],
+    "weight_g": 700,
+    "metals_per_kg": {
+      "gold_mg": 260,
+      "silver_mg": 1800,
+      "copper_mg": 10000,
+      "palladium_mg": 110,
+      "platinum_mg": 7
+    },
+    "base_points": 100,
+    "category": "mobile"
+  },
+  {
+    "id": 14,
+    "name": "Refrigerator",
+    "aliases": ["fridge", "refrigerator", "freeze", "frost free", "double door fridge"],
+    "weight_g": 70000,
+    "metals_per_kg": {
+      "gold_mg": 2,
+      "silver_mg": 10,
+      "copper_mg": 15000,
+      "palladium_mg": 1,
+      "platinum_mg": 0
+    },
+    "base_points": 400,
+    "category": "appliance"
+  },
+  {
+    "id": 15,
+    "name": "Washing Machine",
+    "aliases": ["washing machine", "washer", "front load", "top load", "fully automatic"],
+    "weight_g": 60000,
+    "metals_per_kg": {
+      "gold_mg": 1,
+      "silver_mg": 8,
+      "copper_mg": 12000,
+      "palladium_mg": 0,
+      "platinum_mg": 0
+    },
+    "base_points": 350,
+    "category": "appliance"
+  }
+]
