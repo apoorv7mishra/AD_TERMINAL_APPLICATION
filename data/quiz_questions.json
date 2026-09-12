@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "question": "Which toxic heavy metal found in CRT monitors can reach up to 4 kg per unit and causes severe brain & kidney damage?",
+    "options": ["Lead (Pb)", "Silicon (Si)", "Iron (Fe)", "Gold (Au)"],
+    "correct": 0,
+    "explanation": "CRT monitors contain up to 4 kg of Lead in their glass funnel. Lead in landfills leaches into groundwater, causing irreversible neurological damage — especially in children.",
+    "category": "CRT Monitor"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary danger of throwing Lithium-ion batteries into regular municipal trash?",
+    "options": [
+      "They slowly dissolve into water",
+      "They can ignite runaway chemical fires and explode",
+      "They attract insects and vermin",
+      "They freeze surrounding landfill waste"
+    ],
+    "correct": 1,
+    "explanation": "Compacting or puncturing Li-ion batteries causes thermal runaway — releasing toxic gases (HF, CO) and fires that are nearly impossible to extinguish with water.",
+    "category": "Battery"
+  },
+  {
+    "id": 3,
+    "question": "Roughly how much gold can be recovered from recycling 1 tonne of discarded smartphones?",
+    "options": [
+      "Less than 1 gram",
+      "Around 10 grams",
+      "Over 300 grams — far more than gold ore",
+      "Zero; phones contain no gold"
+    ],
+    "correct": 2,
+    "explanation": "High-grade smartphone circuit boards yield 300–340 g of gold per tonne — 50× richer than the average gold mine (6 g/tonne). Urban mining is extremely efficient!",
+    "category": "Smartphone"
+  },
+  {
+    "id": 4,
+    "question": "Which international treaty governs the control of hazardous e-waste exports between countries?",
+    "options": [
+      "Paris Agreement",
+      "Kyoto Protocol",
+      "Basel Convention",
+      "Montreal Protocol"
+    ],
+    "correct": 2,
+    "explanation": "The Basel Convention (1989) regulates the transboundary movement of hazardous wastes, including e-waste. India ratified it in 1992.",
+    "category": "General"
+  },
+  {
+    "id": 5,
+    "question": "Which gas released by informal burning of e-waste plastics (PVC cables) is extremely toxic and corrosive?",
+    "options": [
+      "Carbon Dioxide (CO₂)",
+      "Methane (CH₄)",
+      "Hydrochloric Acid gas (HCl)",
+      "Nitrogen (N₂)"
+    ],
+    "correct": 2,
+    "explanation": "Burning PVC-insulated cables releases Hydrochloric Acid (HCl) gas and dioxins. Workers in informal e-waste sites show significantly elevated cancer rates from chronic exposure.",
+    "category": "General"
+  },
+  {
+    "id": 6,
+    "question": "What percentage of global e-waste is formally recycled by certified facilities, as per 2023 UNEP data?",
+    "options": ["~5%", "~22%", "~50%", "~75%"],
+    "correct": 1,
+    "explanation": "Only ~22% of global e-waste (by weight) reaches formal recycling. The remaining 78% — worth over $57 billion in raw materials — is wasted, burned, or dumped. India's formal rate is even lower at ~5%.",
+    "category": "General"
+  },
+  {
+    "id": 7,
+    "question": "Which toxic substance found in older laptop batteries (NiCd type) is a proven carcinogen causing lung and prostate cancer?",
+    "options": ["Lithium", "Cadmium (Cd)", "Manganese", "Zinc"],
+    "correct": 1,
+    "explanation": "Cadmium in NiCd batteries is a Group 1 IARC carcinogen. It also accumulates in bones and kidneys, causing 'Itai-itai' disease — a painful condition first documented in Japan.",
+    "category": "Battery"
+  },
+  {
+    "id": 8,
+    "question": "What refrigerant gas, found in old fridges and ACs, destroys the ozone layer and is 2,000× more potent than CO₂ as a greenhouse gas?",
+    "options": ["Oxygen (O₂)", "Nitrogen (N₂)", "CFC / HCFC refrigerants", "Helium (He)"],
+    "correct": 2,
+    "explanation": "Chlorofluorocarbons (CFCs) from improperly scrapped refrigerators persist in the atmosphere for 50–100 years. One AC unit can release up to 2 kg of ozone-depleting CFCs.",
+    "category": "Appliance"
+  },
+  {
+    "id": 9,
+    "question": "According to the E-Waste (Management) Rules 2022 in India, who bears the primary responsibility for collecting back old electronics?",
+    "options": [
+      "The consumer who buys the product",
+      "Municipal corporations only",
+      "Producers / Manufacturers under Extended Producer Responsibility (EPR)",
+      "State environment departments"
+    ],
+    "correct": 2,
+    "explanation": "India's EPR (Extended Producer Responsibility) framework mandates that producers, importers, and brand owners must take back and recycle a defined quota of e-waste they generate.",
+    "category": "Policy"
+  },
+  {
+    "id": 10,
+    "question": "Which precious metal found in smartphone circuit boards is rarer than gold and used as a catalyst in catalytic converters?",
+    "options": ["Silver", "Copper", "Palladium (Pd)", "Aluminium"],
+    "correct": 2,
+    "explanation": "Palladium is rarer than gold and critical for catalytic converters and multilayer ceramic capacitors. Each smartphone contains ~0.015 mg of Pd — significant at scale across billions of devices.",
+    "category": "Smartphone"
+  }
+]

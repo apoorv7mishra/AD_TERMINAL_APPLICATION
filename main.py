@@ -44,6 +44,7 @@ from modules.facility_locator import facility_locator_menu
 from modules.education import education_menu
 from modules.points_calculator import points_calculator_menu
 from modules.rewards import rewards_dashboard_menu, get_tier
+from modules.exporter import export_menu
 
 console = Console()
 ACCOUNT_PATH = Path(__file__).parent / "data" / "user_account.json"
@@ -198,8 +199,9 @@ MENU_ITEMS = [
     ("2", "📚 ", "Learn & Take Eco-Quiz",       "Hazard toxicology library + interactive quiz (+50 pts)"),
     ("3", "⚡ ", "Calculate Recycling Points",   "Fuzzy model search, hazard alert & precious metals yield"),
     ("4", "🏆 ", "My Rewards & Voucher Store",  "View points, redeem Amazon/Flipkart vouchers & certificates"),
-    ("5", "ℹ  ", "About & Problem Statement",    "Architecture details & India e-waste directive alignment"),
-    ("6", "🚪 ", "Exit Application",            "Close the application safely"),
+    ("5", "📤 ", "Export History",               "Save recycling & voucher history to a CSV file"),
+    ("6", "ℹ  ", "About & Problem Statement",    "Architecture details & India e-waste directive alignment"),
+    ("7", "🚪 ", "Exit Application",            "Close the application safely"),
 ]
 
 
@@ -248,7 +250,7 @@ def main_loop() -> None:
             show_main_menu()
 
             choice = Prompt.ask(
-                "\n[bold bright_green]Select an option[/bold bright_green] [dim](1–6)[/dim]",
+                "\n[bold bright_green]Select an option[/bold bright_green] [dim](1–7)[/dim]",
                 default="1",
             ).strip()
 
@@ -273,9 +275,14 @@ def main_loop() -> None:
                 rewards_dashboard_menu()
 
             elif choice == "5":
-                show_about()
+                clear_screen()
+                show_loading("Preparing Export")
+                export_menu()
 
             elif choice == "6":
+                show_about()
+
+            elif choice == "7":
                 clear_screen()
                 console.print(
                     Panel(
@@ -295,7 +302,7 @@ def main_loop() -> None:
                 sys.exit(0)
 
             else:
-                console.print("[red]Invalid option. Please enter a number between 1 and 6.[/red]")
+                console.print("[red]Invalid option. Please enter a number between 1 and 7.[/red]")
                 time.sleep(0.8)
 
         except KeyboardInterrupt:
@@ -352,6 +359,10 @@ def parse_args() -> argparse.Namespace:
         help="Open rewards dashboard directly"
     )
     parser.add_argument(
+        "--export", action="store_true",
+        help="Export recycling history to a CSV file and exit"
+    )
+    parser.add_argument(
         "--version", action="version", version="EcoRecycle Finder v2.0.0-PRO"
     )
     return parser.parse_args()
@@ -374,6 +385,9 @@ if __name__ == "__main__":
         elif args.rewards:
             show_splash()
             rewards_dashboard_menu()
+        elif args.export:
+            show_splash()
+            export_menu()
         else:
             main_loop()
     except KeyboardInterrupt:
