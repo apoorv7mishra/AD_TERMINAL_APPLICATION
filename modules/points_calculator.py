@@ -11,17 +11,15 @@ import string
 from pathlib import Path
 from datetime import datetime
 
-from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
 from rich.prompt import Prompt, IntPrompt
 from rich import box
 from rich.progress import BarColumn, Progress, TextColumn
+from modules.ui import console
 
 from modules.education import render_hazard_modal
-
-console = Console()
 
 DEVICES_PATH = Path(__file__).parent.parent / "data" / "devices.json"
 ACCOUNT_PATH = Path(__file__).parent.parent / "data" / "user_account.json"

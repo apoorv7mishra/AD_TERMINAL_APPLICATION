@@ -7,7 +7,6 @@ import json
 from pathlib import Path
 from typing import Optional
 
-from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
@@ -15,8 +14,7 @@ from rich.prompt import Prompt
 from rich import box
 from rich.columns import Columns
 from rich.align import Align
-
-console = Console()
+from modules.ui import console
 
 DATA_PATH = Path(__file__).parent.parent / "data" / "education.json"
 ACCOUNT_PATH = Path(__file__).parent.parent / "data" / "user_account.json"

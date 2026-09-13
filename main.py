@@ -22,7 +22,6 @@ import time
 import json
 from pathlib import Path
 
-from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
 from rich.prompt import Prompt
@@ -45,8 +44,8 @@ from modules.education import education_menu
 from modules.points_calculator import points_calculator_menu
 from modules.rewards import rewards_dashboard_menu, get_tier
 from modules.exporter import export_menu
+from modules.ui import console
 
-console = Console()
 ACCOUNT_PATH = Path(__file__).parent / "data" / "user_account.json"
 
 
@@ -83,38 +82,38 @@ def show_splash() -> None:
     username, tier_name, points, devices = get_user_quick_stats()
 
     header_text = (
-        f"[bold bright_green]{BANNER.strip()}[/bold bright_green]\n"
-        f"[italic dim green]National E-Waste Management & Precious Metal Recovery Portal • MoEFCC India[/italic dim green]\n"
+        f"[brand]{BANNER.strip()}[/brand]\n"
+        f"[brand.dim]NATIONAL E-WASTE RECOVERY NETWORK  /  MOEFCC INDIA[/brand.dim]\n"
     )
 
     console.print(
         Panel(
             Align.center(header_text),
-            border_style="green",
-            padding=(0, 2),
+            border_style="#2f6f68",
+            padding=(1, 2),
         )
     )
 
     # Status Bar
     status_bar = Table(box=box.SIMPLE, show_header=False, padding=(0, 2), expand=True)
     status_bar.add_column("User", style="white", justify="left")
-    status_bar.add_column("Tier", style="cyan", justify="center")
-    status_bar.add_column("Points", style="yellow", justify="center")
-    status_bar.add_column("Items", style="green", justify="right")
+    status_bar.add_column("Tier", style="info", justify="center")
+    status_bar.add_column("Points", style="accent", justify="center")
+    status_bar.add_column("Items", style="success", justify="right")
 
     status_bar.add_row(
-        f"👤 [bold]{username}[/bold]",
-        f"🎖 [bold]{tier_name}[/bold]",
-        f"💚 [bold bright_yellow]{points:,}[/bold bright_yellow] EcoPoints",
-        f"♻ [bold]{devices}[/bold] Recycled",
+        f"PROFILE  [bold]{username}[/bold]",
+        f"TIER  [bold]{tier_name}[/bold]",
+        f"BALANCE  [bold accent]{points:,}[/bold accent] pts",
+        f"DIVERTED  [bold success]{devices}[/bold success] devices",
     )
-    console.print(Panel(status_bar, border_style="dim green", padding=(0, 1)))
+    console.print(Panel(status_bar, border_style="#263f43", padding=(0, 1)))
 
 
 def show_loading(message: str = "Loading", duration: float = 0.5) -> None:
     """Polished micro-animation."""
     with Live(
-        Spinner("dots", text=f"[green]{message}...[/green]", style="green"),
+        Spinner("dots", text=f"[brand]{message}...[/brand]", style="brand"),
         console=console,
         transient=True,
     ):
@@ -214,13 +213,12 @@ def show_main_menu() -> None:
         border_style="green",
         show_header=False,
         padding=(0, 2),
-        expand=False,
-        min_width=72,
+        expand=True,
     )
-    menu_table.add_column("Num", style="bold bright_green", width=4, justify="center")
-    menu_table.add_column("Icon", width=4)
-    menu_table.add_column("Option", style="bold white", min_width=30)
-    menu_table.add_column("Description", style="dim white", min_width=44)
+    menu_table.add_column("Num", style="bold bright_green", width=4, justify="center", no_wrap=True)
+    menu_table.add_column("Icon", width=4, no_wrap=True)
+    menu_table.add_column("Option", style="bold white", ratio=2, no_wrap=True)
+    menu_table.add_column("Description", style="dim white", ratio=3)
 
     for num, icon, option, desc in MENU_ITEMS:
         menu_table.add_row(
@@ -233,9 +231,9 @@ def show_main_menu() -> None:
     console.print(
         Panel(
             Align.center(menu_table),
-            title="[bold green]♻  EcoRecycle Navigation Terminal[/bold green]",
-            subtitle="[dim italic]Choose an option [1–6] and press Enter[/dim italic]",
-            border_style="green",
+            title="[brand]ECORECYCLE  /  COMMAND CENTER[/brand]",
+            subtitle="[muted]Choose a destination  [1-7]  and press Enter[/muted]",
+            border_style="#2f6f68",
             padding=(1, 2),
         )
     )

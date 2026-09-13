@@ -8,13 +8,11 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich.prompt import Prompt
 from rich import box
-
-console = Console()
+from modules.ui import console
 
 ACCOUNT_PATH = Path(__file__).parent.parent / "data" / "user_account.json"
 EXPORTS_DIR  = Path(__file__).parent.parent / "exports"

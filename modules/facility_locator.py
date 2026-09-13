@@ -10,7 +10,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
 from rich.text import Text
@@ -18,8 +17,7 @@ from rich.prompt import Prompt
 from rich import box
 from rich.columns import Columns
 from rich.align import Align
-
-console = Console()
+from modules.ui import console
 
 DATA_PATH = Path(__file__).parent.parent / "data" / "facilities.json"
 

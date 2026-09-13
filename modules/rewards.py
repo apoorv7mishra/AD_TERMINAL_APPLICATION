@@ -10,15 +10,13 @@ import string
 from pathlib import Path
 from datetime import datetime
 
-from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
 from rich.prompt import Prompt
 from rich import box
 from rich.columns import Columns
-
-console = Console()
+from modules.ui import console
 
 ACCOUNT_PATH = Path(__file__).parent.parent / "data" / "user_account.json"
 
